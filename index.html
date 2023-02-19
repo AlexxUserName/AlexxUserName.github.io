@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="icons/ToDo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="switcher">
+        <input type="checkbox" class="checkbox" id="checkbox" />
+        <label for="checkbox" class="label">
+          <div class="ball"></div>
+        </label>
+        <div class="switcher_text">Dark Theme</div>
+      </div>
+
+      <h1 class="main_header">To-Do List</h1>
+
+      <div class="wrapper">
+          <input
+          type="text"
+          placeholder="Введите наименование задачи"
+          class="main_input"
+          name="task"
+        />
+        <button class="main_btn">Добавить задачу</button>
+      </div>
+
+      <div class="wrap">
+        <div class="main_active main_block">
+          <img src="icons/active.svg" alt="" />
+          <div class="main_subtitle">Активные задачи</div>
+          <div class="line"></div>
+          <div class="active_task-list">
+            <ul class="wrapper_li-item ul-active"></ul>
+          </div>
+        </div>
+
+        <div class="main_completed main_block">
+          <img src="icons/completed.svg" alt="" />
+          <div class="main_subtitle">Выполненные задачи</div>
+          <div class="line"></div>
+          <div class="completed_task-list">
+            <ul class="wrapper_li-item ul-completed"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
